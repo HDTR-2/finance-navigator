@@ -1,0 +1,115 @@
+.SubscriptionCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 20px;
+  height: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: #1C6CE3;
+}
+.SubscriptionCard-Title {
+  padding: 25px 0;
+  height: 50px;
+  font-size: 2.6rem;
+}
+.SubscriptionCard-Price {
+  margin-top: 50px;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+.SubscriptionCard-Description {
+  line-height: 150%;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.SubscriptionCard-Features {
+  line-height: 150%;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: left;
+  list-style: unset;
+  margin-left: 15px;
+}
+.SubscriptionCard-Button {
+  margin: 15px;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  outline-color: transparent;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  color: white;
+}
+.SubscriptionCard-Button:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mostPopular {
+  border: 2px solid #89F9EA;
+  background-color: #114188;
+}
+.mostPopular-subtitle {
+  padding: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  border-radius: 0 0 15px 15px;
+  border-right: 2px solid #89F9EA;
+  border-left: 2px solid #89F9EA;
+  border-bottom: 2px solid #89F9EA;
+  background-color: #114188;
+  color: #89F9EA;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+.mostPopular h2 {
+  color: #89F9EA;
+}
+.mostPopular button {
+  color: #89F9EA;
+  border: 2px solid #89F9EA;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+  .SubscriptionCard-Title {
+    font-size: 3rem;
+  }
+  .SubscriptionCard-Price {
+    font-size: 3rem;
+  }
+  .SubscriptionCard-Description {
+    font-size: 1.3rem;
+  }
+  .mostPopular-subtitle {
+    max-width: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mostPopular-subtitle {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .SubscriptionCard-Title {
+    font-size: 2rem;
+  }
+  .SubscriptionCard-Price {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .SubscriptionCard-Description {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .mostPopular-subtitle {
+    max-width: 200px;
+  }
+}
+
+/*# sourceMappingURL=SubscriptionCard.css.map */

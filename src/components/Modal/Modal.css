@@ -1,5 +1,3 @@
-@import "../../styles/global";
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -10,8 +8,6 @@
     visibility: visible;
   }
 }
-
-
 @keyframes slideIn {
   from {
     transform: translateY(-50px);
@@ -20,8 +16,6 @@
     transform: translateY(0);
   }
 }
-
-
 .Modal {
   padding: 10px;
   position: fixed;
@@ -37,40 +31,34 @@
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 1000;
-
-  &.open {
-    animation: fadeIn 0.3s forwards;
-
-    .Modal-Content {
-      animation: slideIn 0.3s forwards;
-    }
-  }
-
-
-  &-Content {
-    background: $DarkBlueColor;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-height: 80vh;
-    overflow-y: auto;
-
-
-  }
-
-  &-Close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-
-  }
+}
+.Modal.open {
+  animation: fadeIn 0.3s forwards;
+}
+.Modal.open .Modal-Content {
+  animation: slideIn 0.3s forwards;
+}
+.Modal-Content {
+  background: #114188;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.Modal-Close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 body.modal-open {
   overflow: hidden;
 }
+
+/*# sourceMappingURL=Modal.css.map */

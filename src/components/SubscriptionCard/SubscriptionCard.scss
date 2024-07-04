@@ -1,0 +1,154 @@
+@import "../../styles/global";
+
+.SubscriptionCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 20px;
+  height: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: $LightBlueColor;
+
+
+  &-Title {
+    padding: 25px 0;
+    height: 50px;
+    font-size: 2.6rem;
+  }
+
+  &-Price {
+    margin-top: 50px;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+
+  }
+
+
+  &-Description {
+    line-height: 150%;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  &-Features {
+    line-height: 150%;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: left;
+    list-style: unset;
+    margin-left: 15px;
+  }
+
+
+  &-Button {
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    outline-color: transparent;
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.mostPopular {
+  border: 2px solid $LazureColor;
+  background-color: $DarkBlueColor;
+
+  &-subtitle {
+    padding: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    border-radius: 0 0 15px 15px;
+    border-right: 2px solid $LazureColor;
+    border-left: 2px solid $LazureColor;
+    border-bottom: 2px solid $LazureColor;
+    background-color: $DarkBlueColor;
+    color: $LazureColor;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    color: $LazureColor;
+  }
+
+  button {
+    color: $LazureColor;
+    border: 2px solid $LazureColor;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .SubscriptionCard {
+    &-Title {
+      font-size: 3rem;
+    }
+
+
+    &-Price {
+      font-size: 3rem;
+    }
+
+    &-Description {
+      font-size: 1.3rem;
+    }
+
+
+  }
+  .mostPopular {
+
+    &-subtitle {
+      max-width: 65%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .mostPopular {
+
+    &-subtitle {
+      max-width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .SubscriptionCard {
+    &-Title {
+      font-size: 2rem;
+    }
+
+    &-Price {
+      font-size: 2rem;
+      margin-bottom: 10px;
+
+    }
+
+    &-Description {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+
+    }
+  }
+
+  .mostPopular {
+
+    &-subtitle {
+      max-width: 200px;
+    }
+  }
+}

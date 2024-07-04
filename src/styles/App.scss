@@ -1,17 +1,74 @@
 @import "./reset";
+@import "./global";
 
-//Colors
-$color-white: #FFFFFF;
-$color-black: #000000;
-$color-gray: #F0F0F0;
 
 .App {
   font-family: 'Droid Sans', sans-serif;
   text-align: center;
+  height: 100vh;
+  background-color: $DarkBlueColor;
 
   &-Container {
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: $MainBlueColor;
+
+
+  }
+
+  &-Title {
+    padding: 25px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  &-Subtitle {
+    padding: 25px;
+    font-size: 2rem;
+    color: white;
+    line-height: 110%;
+  }
+
+
+  &-Content {
+    padding: 50px 25px;
     max-width: 1440px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .App {
+    h1 {
+      font-size: 2rem;
+    }
+
+    &-Container {
+      height: auto;
+
+
+    }
+
+    &-Content {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    &-Content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+
+  }
+}

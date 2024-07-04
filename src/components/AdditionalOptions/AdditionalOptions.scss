@@ -1,0 +1,101 @@
+@import "../../styles/global";
+
+.AdditionalOptions {
+  &-Content {
+    padding: 20px;
+    color: white;
+  }
+
+  &-List {
+    padding: 15px 0;
+    list-style: none;
+    text-align: left;
+    line-height: 140%;
+  }
+
+  &-Button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &-Item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      & + p {
+        position: relative;
+        padding-left: 35px;
+        margin: 0;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          border: 2px solid #ccc;
+          background-color: #fff;
+          border-radius: 4px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 7px;
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+          width: 6px;
+          height: 12px;
+          border: solid #2196F3;
+          border-width: 0 2px 2px 0;
+          opacity: 0;
+        }
+      }
+
+
+      &:checked + p::after {
+        opacity: 1;
+      }
+
+      &:checked + p::before {
+        border-color: #2196F3;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .AdditionalOptions {
+    &-Item {
+      p {
+        font-size: 0.9rem;
+      }
+
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
