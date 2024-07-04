@@ -1,0 +1,17 @@
+@import "./reset";
+
+//Colors
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-gray: #F0F0F0;
+
+.App {
+  font-family: 'Droid Sans', sans-serif;
+  text-align: center;
+
+  &-Container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
