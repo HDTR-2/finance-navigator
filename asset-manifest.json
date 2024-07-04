@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/finance-navigator/static/css/main.c3735824.css",
+    "main.js": "/finance-navigator/static/js/main.1f6a2f22.js",
+    "static/js/453.60a4b39e.chunk.js": "/finance-navigator/static/js/453.60a4b39e.chunk.js",
+    "index.html": "/finance-navigator/index.html",
+    "main.c3735824.css.map": "/finance-navigator/static/css/main.c3735824.css.map",
+    "main.1f6a2f22.js.map": "/finance-navigator/static/js/main.1f6a2f22.js.map",
+    "453.60a4b39e.chunk.js.map": "/finance-navigator/static/js/453.60a4b39e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3735824.css",
+    "static/js/main.1f6a2f22.js"
+  ]
+}
